@@ -1,0 +1,222 @@
+/* ZEROING */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    font-family: Space Mono, monospace;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none; }
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1 {
+    font-family: Space Mono, monospace;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 148%;
+    letter-spacing: -0.035em;
+
+    color: #333333;
+}
+
+h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* STYLES */
+body {
+    width: 1440px;
+    height: 1080px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 105px;
+    padding: 0 77px;
+    margin-bottom: 160px;
+}
+
+.header__logo {
+    padding: 40px 0;
+
+    font-family: Inconsolata, monospace;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 104%;
+    letter-spacing: -0.09em;
+    text-transform: uppercase;
+    
+    color: #333333;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 0 119px 0 77px;
+    margin-bottom: 300px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__image, .main__image img {
+    width: 539.22px;
+}
+
+.main__title, .main__text {
+    width: 586px;
+}
+
+.main__subtitle {
+    font-family: Space Mono, monospace;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    
+    color: #4F4F4F;
+
+    width: 381px;
+    margin: 36px 0 64px 0;
+}
+
+.main__button {
+    width: 216px;
+    height: 68px;
+    background: #333333;
+
+    font-family: Space Mono, monospace;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    transition: all .3s linear;
+}
+
+.main__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 11px 48px 0px rgba(34, 60, 80, 0.11);
+    transition: all .2s linear;
+}
+
+.footer {
+    height: 41px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer__copyright {
+    width: 287px;
+    height: 17px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+    text-align: center;
+    
+    color: #BDBDBD;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+    body {
+        width: 435px;
+        height: 100%;
+    }
+
+    .header {
+        max-width: 435px;
+        height: 65px;
+        padding: 0 24px;
+        margin-bottom: 64px;
+    } 
+
+    .main {
+        margin-bottom: 114px;
+        padding: 0;
+    }
+
+    .main__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-left: 24px;
+    }
+
+    .main__image, .main__image img {
+        width: 330px;
+    }
+
+    .main__image {
+        width: 400px;
+        margin-bottom: 60px;
+
+        display: flex;
+        justify-content: justify-content;
+    }
+
+    .main__text {
+        width: 350px;
+    }
+
+    .main__title, .main__title h1 {
+        width: 350px;
+
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+    }
+
+    .main__subtitle {
+        width: 328px;
+
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.035em;
+
+        margin: 30px 0 66px 0;
+    }
+}
